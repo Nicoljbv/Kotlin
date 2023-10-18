@@ -24,12 +24,16 @@ class Banco {
         }
     }
 
-    fun saldoBanco(clientes:MutableList<MutableList<Any>>) {
-        for (i in 1..clientes.size) {
-            var total:Float=0f
-            total= total + clientes[i].last()
+    fun saldoBanco(clientes: MutableList<MutableList<Any>>) {
+        var totalBanco: Float = 0f
+        for (cliente in clientes) {
+            if (cliente.last() is Float) {
+                val totalCliente = cliente.last() as Float
+                totalBanco += totalCliente
+            }
         }
     }
+
 
 
 }
