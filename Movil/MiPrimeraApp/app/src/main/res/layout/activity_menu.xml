@@ -14,7 +14,9 @@
         android:background="#FBFBFB"
         android:orientation="horizontal"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"/>
+        tools:layout_editor_absoluteY="1dp">
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/buttonCalculadora"
@@ -35,27 +37,43 @@
         tools:layout_editor_absoluteY="310dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonedad"
         android:layout_width="222dp"
         android:layout_height="110dp"
-        android:text="Button"
+        android:text="Edad"
+        android:textSize="20sp"
         tools:layout_editor_absoluteX="68dp"
         tools:layout_editor_absoluteY="512dp" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="92dp"
+        android:layout_height="120dp"
         app:srcCompat="@mipmap/calculadora"
-        tools:layout_editor_absoluteX="270dp"
-        tools:layout_editor_absoluteY="89dp" />
+        tools:layout_editor_absoluteX="302dp"
+        tools:layout_editor_absoluteY="108dp" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="122dp"
-        android:layout_height="128dp"
-        app:srcCompat="@mipmap/banco"
-        tools:layout_editor_absoluteX="269dp"
-        tools:layout_editor_absoluteY="300dp" />
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/banco" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="108dp"
+        android:layout_height="94dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814"
+        app:srcCompat="@mipmap/edad" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
